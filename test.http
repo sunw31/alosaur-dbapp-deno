@@ -1,6 +1,17 @@
-POST https://localhost:8000/users HTTP/1.1
+POST http://localhost:8000/users HTTP/1.1
 content-type: application/json
 
 {
-    "name": "Jack",
+    "name": "Jack"
 }
+
+PUT http://localhost:8000/users/1 HTTP/1.1
+content-type: application/json
+
+{
+    "name": "Jack"
+}
+
+GET http://localhost:8000/users HTTP/1.1
+
+GET http://localhost:8000/users/1 HTTP/1.1
