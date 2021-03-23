@@ -1,4 +1,12 @@
-import { Controller, Get, Post, Put, Delete, Param, Body } from "alosaur/mod.ts";
+import {
+  Body,
+  Controller,
+  Delete,
+  Get,
+  Param,
+  Post,
+  Put,
+} from "alosaur/mod.ts";
 import { UserService } from "../../services/user.service.ts";
 
 @Controller("/users")
@@ -7,7 +15,7 @@ export class UserController {
 
   @Get()
   getAll() {
-    console.log("Get all users.")
+    console.log("Get all users.");
     return this.service.findAll();
   }
 
@@ -33,6 +41,6 @@ export class UserController {
   delete(@Param("id") id: number) {
     console.log(`Delete user with id ${id}`);
     this.service.delete(id);
-    return "";
+    return id;
   }
 }

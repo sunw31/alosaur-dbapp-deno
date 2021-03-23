@@ -1,15 +1,15 @@
 import { getCustomRepository } from "typeorm/src/index.ts";
 import { UserRepository } from "../repositories/user.repository.ts";
-import { User } from '../entities/user.entity.ts';
+import { User } from "../entities/user.entity.ts";
 
 export class UserService {
   private userRepository: UserRepository;
   constructor() {
-      this.userRepository = getCustomRepository(UserRepository);
+    this.userRepository = getCustomRepository(UserRepository);
   }
 
   findAll(): Promise<User[]> {
-      return this.userRepository.find();
+    return this.userRepository.find();
   }
 
   findById(id: number): Promise<User | undefined> {
