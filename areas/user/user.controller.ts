@@ -32,6 +32,7 @@ export class UserController {
   @Delete("/:id")
   delete(@Param("id") id: number) {
     console.log(`Delete user with id ${id}`);
-    return this.service.delete(id);
+    this.service.delete(id);
+    return "";
   }
 }
