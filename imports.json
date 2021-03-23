@@ -1,0 +1,7 @@
+{
+  "imports": {
+    "alosaur/": "https://deno.land/x/alosaur@v0.29.3/",
+    "sqlite/": "https://deno.land/x/sqlite/",
+    "typeorm/": "https://denolib.com/denolib/typeorm@v0.2.23-rc10/"
+  }
+}
