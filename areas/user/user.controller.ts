@@ -8,6 +8,7 @@ import {
   Put,
 } from "alosaur/mod.ts";
 import { UserService } from "../../services/user.service.ts";
+import { UserDto } from "../../dtos/user.dto.ts";
 
 @Controller("/users")
 export class UserController {
@@ -26,13 +27,13 @@ export class UserController {
   }
 
   @Post()
-  create(@Body() body: any) {
+  create(@Body() body: UserDto) {
     console.log(`Create a user with name: ${body.name}`);
     return this.service.save(body.name);
   }
 
   @Put("/:id")
-  update(@Body() body: any, @Param("id") id: number) {
+  update(@Body() body: UserDto, @Param("id") id: number) {
     console.log(`Change user with id ${id} 's name to: ${body.name}`);
     return this.service.update(id, body.name);
   }
