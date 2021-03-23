@@ -8,11 +8,11 @@ export class UserService {
       this.userRepository = getCustomRepository(UserRepository);
   }
 
-  getAll() {
+  findAll(): Promise<User[]> {
       return this.userRepository.find();
   }
 
-  getById(id: number) {
+  findById(id: number): Promise<User | undefined> {
     return this.userRepository.findOne(id);
   }
 
@@ -28,5 +28,9 @@ export class UserService {
       user.name = name;
       return this.userRepository.save(user);
     }
+  }
+
+  async delete(id: number): Promise<void> {
+    await this.userRepository.delete(id);
   }
 }
