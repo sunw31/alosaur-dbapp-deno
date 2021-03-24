@@ -5,6 +5,8 @@ DB implementation of Alosaur web framework using SQLite3.
 ### TODO
 
 - [ ] Logging
+- [ ] OpenAPI documents
+- [ ] Unit tests
 - [ ] JWT Authentication
 - [ ] Using Vue.js as Frontend
 - [ ] Using Surveyjs.io to build a survey
@@ -14,6 +16,8 @@ DB implementation of Alosaur web framework using SQLite3.
 - [ ] WeApp Authentication
 - [ ] WeApp Pay
 - [ ] CI/CD with GitHub Actions
+- [ ] Production use with nginx and process monitor.
+- [ ] Database schema auto migrations
 
 ### Config file
 
