@@ -1,4 +1,8 @@
-import { DeleteResult, getCustomRepository, UpdateResult } from "typeorm/src/index.ts";
+import {
+  DeleteResult,
+  getCustomRepository,
+  UpdateResult,
+} from "typeorm/src/index.ts";
 import { UserRepository } from "../repositories/user.repository.ts";
 import { User } from "../entities/user.entity.ts";
 
@@ -23,7 +27,7 @@ export class UserService {
   }
 
   update(id: number, name: string): Promise<UpdateResult> {
-    return this.userRepository.update({id: id},{name: name});
+    return this.userRepository.update({ id: id }, { name: name });
   }
 
   delete(id: number): Promise<DeleteResult> {
