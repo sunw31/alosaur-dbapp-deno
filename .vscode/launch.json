@@ -23,7 +23,8 @@
         "./tsconfig.json"
       ],
       "attachSimplePort": 9229,
-      "console": "integratedTerminal"
+      "console": "integratedTerminal",
+      "timeout": 20000
     },
     {
       "name": "Deno: debug",
@@ -44,7 +45,8 @@
         "./tsconfig.json"
       ],
       "attachSimplePort": 9229,
-      "console": "integratedTerminal"
+      "console": "integratedTerminal",
+      "timeout": 20000
     }
   ]
 }
