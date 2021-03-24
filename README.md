@@ -13,6 +13,7 @@ DB implementation of Alosaur web framework using SQLite3.
 - [ ] WeChat HTML5 Pay
 - [ ] WeApp Authentication
 - [ ] WeApp Pay
+- [ ] CI/CD with GitHub Actions
 
 ### Config file
 
