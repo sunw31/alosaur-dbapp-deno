@@ -1,9 +1,21 @@
 # Name
 
-This boilerplate contains DB implementation of Alosaur web framework.
+DB implementation of Alosaur web framework using SQLite3.
 
-Edit `database.ts` config
+### TODO
 
+[] Logging
+[] JWT Authentication
+[] Using Vue.js as Frontend
+[] Using Surveyjs.io to build a survey
+[] WeChat HTML5 Authentication
+[] WeChat HTMl5 get the mobile number using serial number
+[] WeChat HTML5 Pay
+[] WeApp Authentication
+[] WeApp Pay
+### Config file
+
+`database.ts`
 ### Scripts
 
 Run server
